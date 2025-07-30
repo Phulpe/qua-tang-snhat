@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday My Love! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Question Section -->
+        <div id="question-section" class="section active">
+            <div class="heart-bg"></div>
+            <div class="content">
+                <h1 class="title">💕 bạn có thưn tui hongggg? 💕</h1>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn yes-btn">Có thưn nhìu nhìu 💖</button>
+                    <button id="no-btn" class="btn no-btn">Hong thưn 😢</button>
+                </div>
+                <div class="fun-icons">
+                    <span class="fun-icon">🎈</span>
+                    <span class="fun-icon">🎊</span>
+                    <span class="fun-icon">🎉</span>
+                    <span class="fun-icon">🎂</span>
+                    <span class="fun-icon">🎁</span>
+                    <span class="fun-icon">💝</span>
+                    <span class="fun-icon">💖</span>
+                    <span class="fun-icon">💕</span>
+                    <span class="fun-icon">🦛</span>
+                    <span class="fun-icon">🦛</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Birthday Celebration Section -->
+        <div id="birthday-section" class="section">
+            <div class="birthday-bg"></div>
+            <div class="content">
+                <h1 class="birthday-title">🎉 Happy Birthday embee cua tuii! 🎉</h1>
+                <p class="birthday-message">Chúc mừng sinh nhật thảo iuuuu! 💕</p>
+                <p class="cake-instruction">🕯️ Bấm vào lửa để thổi nến 🕯️</p>
+                
+                <!-- Birthday Cake -->
+                <div class="birthday-cake" id="birthday-cake">
+                    <div class="cake-base"></div>
+                    <div class="cake-layer"></div>
+                    <div class="cake-top"></div>
+                    <div class="candle" onclick="blowCandle(0)">
+                        <div class="flame" id="flame-0"></div>
+                    </div>
+                    <div class="candle" onclick="blowCandle(1)">
+                        <div class="flame" id="flame-1"></div>
+                    </div>
+                    <div class="candle" onclick="blowCandle(2)">
+                        <div class="flame" id="flame-2"></div>
+                    </div>
+                </div>
+                
+                <div class="gift-container" id="gift-container" style="display: none;">
+                    <div class="gift-box" onclick="openBook()">
+                        <div class="gift-lid">
+                            <div class="ribbon-vertical"></div>
+                        </div>
+                        <div class="gift-body">
+                            <div class="ribbon-horizontal"></div>
+                            <div class="ribbon-bow">
+                                <div class="bow-left"></div>
+                                <div class="bow-right"></div>
+                                <div class="bow-center"></div>
+                            </div>
+                            <span class="gift-text">Click để mở quà! 🎁</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Love Story Book Section -->
+        <div id="book-section" class="section">
+            <div class="book-container">
+                <div class="book">
+                    <div class="book-cover">
+                        <h2>💕 Our Love Story hẹ hẹ 💕</h2>
+                        <p>Click để đọc</p>
+                    </div>
+                    <div class="book-pages">
+                        <!-- Trang 1: Chỉ có chữ -->
+                        <div class="page active">
+                            <h3>Trang 1:</h3>
+                            <p>Heloooo embeee iu dấu! Cuốn sách nhỏ này ghi lại những khoảnh khắc và kỷ niệm tuyệt vời của tụi mình neee.💖</p>
+                        </div>
+                        <!-- Trang 2 -->
+                        <div class="page">
+                            <h3>Trang 2: lúc tụi mình chưa có nhau</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">bó bột mà sung </div>
+                                    <img src="photo/chanbobot.jpg" alt="bó bột mà sung">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">buònn</div>
+                                    <img src="photo/hongha.jpg" alt="buònn">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 3 -->
+                        <div class="page">
+                            <h3>Trang 3: có nhao dòi nhma còn ngại ngại</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">ngày đầu bựa bựa</div>
+                                    <img src="photo/gd1.jpg" alt="ngày đầu bựa bựa">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">dthhhh</div>
+                                    <img src="photo/gd2.jpg" alt="dthhhh">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 4 -->
+                        <div class="page">
+                            <h3>Trang 4:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">gđ hphuc</div>
+                                    <img src="photo/gd3.jpg" alt="gđ hphuc">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">va ong hang xom</div>
+                                    <img src="photo/gd4.jpg" alt="va ong hang xom">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 5 -->
+                        <div class="page">
+                            <h3>Trang 5: tụi tui hôm 10 tháng 5 nè</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">phúc</div>
+                                    <img src="photo/thuthiem1.jpg" alt="phúc">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">thảo</div>
+                                    <img src="photo/thuthiem2.jpg" alt="thảo">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 6 -->
+                        <div class="page">
+                            <h3>Trang 6:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">dơ </div>
+                                    <img src="photo/thuthiem3.jpg" alt="dơ">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">duiii</div>
+                                    <img src="photo/thuthiem4.jpg" alt="duiii">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 7 -->
+                        <div class="page">
+                            <h3>Trang 7:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">cần giờ gô</div>
+                                    <img src="photo/cangio1.jpg" alt="cần giờ gô">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/cangio2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 8 -->
+                        <div class="page">
+                            <h3>Trang 8:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">embee</div>
+                                    <img src="photo/cangio3.jpg" alt="embee">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">embee và khỉ</div>
+                                    <img src="photo/cangio4.jpg" alt="embee và khỉ">
+                                </div>
+                            </div>
+                            <p>chọc khỉ bựa bựa. 🏡</p>
+                        </div>
+                        <!-- Trang 9 -->
+                        <div class="page">
+                            <h3>Trang 9: cnay cũn bựa bựa</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/bua2.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/bua4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 10 -->
+                        <div class="page">
+                            <h3>Trang 10: lốc kết</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/locket1.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">dc ngiu tặng hẹ hẹ</div>
+                                    <img src="photo/locket2.jpg" alt="dc ngiu tặng hẹ hẹ">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 11 -->
+                        <div class="page">
+                            <h3>Trang 11: di choiiii</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/ngoaiduong.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">view dep nguoi dep</div>
+                                    <img src="photo/cafe2.jpg" alt="view dep nguoi dep">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 12 -->
+                        <div class="page">
+                            <h3>Trang 12: buổi tối</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/call1.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/call2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 13 -->
+                        <div class="page">
+                            <h3>Trang 13: 2 dua minh dth hẹ hẹ</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/call3.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/call4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 14 -->
+                        <div class="page">
+                            <h3>Trang 14:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"> hjhj embee cười</div>
+                                    <img src="photo/call6.jpg" alt=" hjhj embee cười">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">huhuu embekhoc</div>
+                                    <img src="photo/embekhoc.jpg" alt="huhuu embekhoc">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 15 -->
+                        <div class="page">
+                            <h3>Trang 15: gap emellata</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/hoatdong1.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">doan ket</div>
+                                    <img src="photo/hoatdong2.jpg" alt="doan ket">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 16 -->
+                        <div class="page">
+                            <h3>Trang 16: hẹ hẹ</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/tay1.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/tay.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 17 -->
+                        <div class="page">
+                            <h3>Trang 17:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/ngiutang.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">hjjj</div>
+                                    <img src="photo/hehe.jpg" alt="hjjj">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 18 -->
+                        <div class="page">
+                            <h3>Trang 18:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">ngau ac</div>
+                                    <img src="photo/thaongau.jpg" alt="ngau ac">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">ae phúc khi biết thảo</div>
+                                    <img src="photo/aephuc.jpg" alt="ae phúc khi biết thảo">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 19 -->
+                        <div class="page">
+                            <h3>Trang 19:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption"></div>
+                                    <img src="photo/traik12f.jpg" alt="">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">gđ thao phuc 😢</div>
+                                    <img src="photo/congai.jpg" alt="gđ thao phuc 😢">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 20 -->
+                        <div class="page">
+                            <h3>Trang 20:</h3>
+                            <div class="page-gallery">
+                                <div class="img-block">
+                                    <div class="img-caption">mèo và mèo</div>
+                                    <img src="photo/cat.jpg" alt="mèo và mèo">
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-caption">thảo và phúc</div>
+                                    <img src="photo/gd5.jpg" alt="thảo và phúc">
+                                </div>
+                            </div>
+                            <p>Chúc embe thảooo sinh nhật duiii vẻee! Mong tụi mình sẽ có thêm thật nhiều kỷ niệm cùng nhauuu hẹ hẹ! 💕🎂</p>
+                        </div>
+                        <div class="book-navigation">
+                            <button class="nav-btn" onclick="previousPage()">← Trước</button>
+                            <span class="page-indicator">Trang <span id="current-page">1</span> / <span id="total-pages">20</span></span>
+                            <button class="nav-btn" onclick="nextPage()">Sau →</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="close-btn" onclick="closeBook()">Đóng sách</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
